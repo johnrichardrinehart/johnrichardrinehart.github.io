@@ -1,18 +1,21 @@
-const e = React.createElement;
+var e = React.createElement;
 
-const ProjectTile = ({text}) => {
+var ProjectTile = function ProjectTile({ title }) {
     return (
-        <div>
-            <p>{text}</p>
+        <div class="card">
+            <p class="title">{title}</p>
         </div>
     )
-}
+};
 
-const ProjectsContainer = () => {
+var ProjectsContainer = function ProjectsContainer() {
     return (
-        <ProjectTile text="Some Words" ></ProjectTile>
+        <div>
+            <ProjectTile title="Some Words"></ProjectTile>
+            <ProjectTile title="Some Other Words"></ProjectTile>
+        </div>
     )
-}
+};
 
-const domContainer = document.querySelector('#projects_container');
-ReactDOM.render(e(ProjectsContainer), domContainer)
+var domContainer = document.querySelector('#projects_container');
+ReactDOM.render(e(ProjectsContainer), domContainer);

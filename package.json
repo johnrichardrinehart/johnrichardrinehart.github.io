@@ -1,0 +1,24 @@
+{
+  "name": "PersonalWebsite",
+  "version": "1.0.0",
+  "description": "The site uses `Jekyll` to compile the static content and provide some useful build tools (`jekyll-watch`).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnrichardrinehart/johnrichardrinehart.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnrichardrinehart/johnrichardrinehart.github.io/issues"
+  },
+  "homepage": "https://github.com/johnrichardrinehart/johnrichardrinehart.github.io#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}

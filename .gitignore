@@ -3,7 +3,6 @@ _site
 .jekyll-metadata
 Gemfile.lock
 jekyll_serve.bat
-js/react
 node_modules
 
 # vim

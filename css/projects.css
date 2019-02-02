@@ -15,15 +15,58 @@
    width: 80%;
    height: 100px;
    margin: 20px 10%;
+   padding-left: 40px;
    background: #e3e3e3;
-   text-align: center;
-   line-height:100px;
+   text-align: left;
+   position: relative;
+   overflow: hidden;
+   display: flex;
 }
 
 .title {
-   display: inline-block;
-   vertical-align: middle;
-   line-height: normal;
+   font-size: 32px;
+   line-height: 100px;
+   order: 1;
+   width: 300px;
+}
+
+.card:hover {
+   background: #d6d6d6;
+}
+
+.desc-container {
+   height: 100px;
+   flex: 1;
+   order: 2;
+   display: flex;
+   position: relative;
+   top: -100px;
+   transition: top 1s ease-out;
+}
+
+.desc-text {
+   font-size: 18px;
+   order: 1;
+   flex: 80;
+   line-height: 24px;
+}
+
+.desc-link {
+   order: 2;
+   flex: 20;
+   margin-left: auto;
+   position: relative;
+   margin-right: 40px;
+}
+
+.desc-link > a > img {
+   position: absolute;
+   right: 0;
+}
+
+.card:hover > .desc-container {
+   top: 25%;
+   transition: top 1s ease-in;
 }
 
 body {

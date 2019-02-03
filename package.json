@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/johnrichardrinehart/johnrichardrinehart.github.io#readme",
   "dependencies": {
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-es2016": "^7.0.0-beta.53",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2"
   }

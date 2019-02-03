@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: "production",
     entry: './react/ProjectTile.jsx',
     output: {
         path: path.resolve(__dirname, 'js/react'),

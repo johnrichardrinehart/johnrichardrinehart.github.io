@@ -1,0 +1,27 @@
+{
+    "scss": [{
+            "path": "./_sass/main.scss",
+            "name": "main"
+        },
+        {
+            "path": "./_sass/post.scss",
+            "name": "post"
+        },
+        {
+            "path": "./_sass/reset.scss",
+            "name": "reset"
+        },
+        {
+            "path": "./_sass/index.scss",
+            "name": "index"
+        },
+        {
+            "path": "./_sass/projects.scss",
+            "name": "projects"
+        },
+        {
+            "path": "./_sass/resume.scss",
+            "name": "resume"
+        }
+    ]
+}

@@ -1,21 +1,74 @@
+// const path = require('path');
+const config = require('./chunks.json');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
+
 const path = require('path');
+function recursiveIssuer(m) {
+    if (m.issuer) {
+        return recursiveIssuer(m.issuer);
+    } else if (m.name) {
+        return m.name;
+    } else {
+        return false;
+    }
+}
+
+const entryPoints = {
+    ProjectTile: './react/ProjectTile.jsx',
+}
+
+config.scss.forEach(entry => {
+    entryPoints[entry.name] = entry.path;
+});
+
+const cacheGroups = {}
+
+config.scss.forEach(entryPoint => {
+    cacheGroups[entryPoint.name] = {
+        name: entryPoint.name,
+        test: (m, c, entry = entryPoint.name) => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+        chunks: 'all',
+        enforce: true
+    }
+});
 
 module.exports = {
-    mode: "production",
-    entry: './react/ProjectTile.jsx',
-    output: {
-        path: path.resolve(__dirname, 'js/react'),
-        filename: 'ProjectTile.js',
-    },
+    entry: entryPoints,
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                }
-            }
+                use: 'babel-loader'
+            },
+            {
+                test: /\.(sc|c)ss$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    { loader: 'css-loader' },
+                    // { loader: 'postcss-loader' },
+                    { loader: 'sass-loader' },
+                ]
+            },
         ]
-    }
+    },
+    optimization: {
+        splitChunks: { cacheGroups: cacheGroups }
+    },
+    mode: "production",
+    output: {
+        path: path.resolve(__dirname, 'js/react')
+    },
+    plugins: [
+        new FixStyleOnlyEntriesPlugin(),
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: "../../css/[name].css",
+            chunkFilename: "../../css/[name].css"
+        }),
+    ],
 }

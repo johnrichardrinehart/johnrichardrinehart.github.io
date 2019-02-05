@@ -39,7 +39,7 @@ class ProjectTile extends React.Component {
             this.setState({ backgroundColor: this.props.color })
             return
         }
-        this.setState({backgroundColor: this.addHexColor(this.props.color,'#101010')})
+        this.setState({ backgroundColor: this.addHexColor(this.props.color, '#101010') })
     }
 
     render() {
@@ -49,7 +49,9 @@ class ProjectTile extends React.Component {
 
         return (
             <div class="card" style={style} onMouseEnter={this.setButtonHovered} onMouseLeave={this.setButtonHovered} >
-                <span class="title">{this.props.title}</span>
+                <a href={this.props.url}>
+                    <span class="title">{this.props.title}</span>
+                </a>
                 <span class="desc-container">
                     <p class="desc-text">
                         <p class="desc"><b>{this.props.title}&nbsp;</b>{this.props.desc}</p>

@@ -22,6 +22,10 @@
         {
             "path": "./_sass/resume.scss",
             "name": "resume"
+        },
+        {
+            "path": "./_sass/about.scss",
+            "name": "about"
         }
     ]
 }

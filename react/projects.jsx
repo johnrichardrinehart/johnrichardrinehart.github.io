@@ -19,6 +19,7 @@ const TechnologiesEnum = {
     REACTNATIVE: `react-native`,
     ANDROID: `android`,
     IOS: `iOS`,
+    CANVAS: `HTML Canvas API`
 }
 
 export default [
@@ -79,10 +80,10 @@ export default [
         title: 'pong.js',
         desc: `is a vanilla JavaScript implemenation of the classic arcade game Pong.`,
         techs: [
-            TechnologiesEnum.REACT,
-            TechnologiesEnum.REACTNATIVE,
-            TechnologiesEnum.ANDROID,
-            TechnologiesEnum.IOS,
+            TechnologiesEnum.JAVASCRIPT,
+            TechnologiesEnum.CSS,
+            TechnologiesEnum.HTML,
+            TechnologiesEnum.CANVAS,
         ],
         githubURL: `https://github.com/johnrichardrinehart/pong.js`,
         projectURL:`/pong/`,

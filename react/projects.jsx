@@ -33,7 +33,8 @@ export default [
             TechnologiesEnum.HTML,
             TechnologiesEnum.CSS,
         ],
-        url: `https://github.com/johnrichardrinehart/DMCScheduler.py`,
+        projectURL: `https://github.com/johnrichardrinehart/DMCScheduler.py`,
+        githubURL: `https://github.com/johnrichardrinehart/DMCScheduler.py`,
         status: `Stable`
     }, {
         title: 'website',
@@ -47,7 +48,8 @@ export default [
             TechnologiesEnum.BABEL,
             TechnologiesEnum.SESSIONSTORAGE,
         ],
-        url: `https://github.com/johnrichardrinehart/website`,
+        githubURL: `https://github.com/johnrichardrinehart/website`,
+        projectURL: `https://github.com/johnrichardrinehart/website`,
         status: `Stable`,
     }, {
         title: 'gotex',
@@ -58,7 +60,8 @@ export default [
             TechnologiesEnum.GOLANG,
             TechnologiesEnum.LATEX,
         ],
-        url: `https://github.com/johnrichardrinehart/gotex`,
+        githubURL: `https://github.com/johnrichardrinehart/gotex`,
+        projectURL: `https://github.com/johnrichardrinehart/gotex`,
         status: `Stable`,
     }, {
         title: 'IEC',
@@ -69,7 +72,19 @@ export default [
             TechnologiesEnum.ANDROID,
             TechnologiesEnum.IOS,
         ],
-        url: `https://github.com/johnrichardrinehart/IEC`,
+        githubURL: `https://github.com/johnrichardrinehart/IEC`,
+        projectURL: `https://github.com/johnrichardrinehart/IEC`,
         status: `Stable`,
-    },
-]
+    }, {
+        title: 'pong.js',
+        desc: `is a vanilla JavaScript implemenation of the classic arcade game Pong.`,
+        techs: [
+            TechnologiesEnum.REACT,
+            TechnologiesEnum.REACTNATIVE,
+            TechnologiesEnum.ANDROID,
+            TechnologiesEnum.IOS,
+        ],
+        githubURL: `https://github.com/johnrichardrinehart/pong.js`,
+        projectURL:`/pong/`,
+        status: `Stable`,
+    },]

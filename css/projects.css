@@ -70,8 +70,7 @@
 .footnote {
   font-size: 12px; }
 
-.footnote-container,
-.technologies {
+.footnote-container, .technologies {
   display: flex; }
 
 .technologies > b {
@@ -91,82 +90,9 @@ body {
 b {
   font-weight: 800; }
 
-@media (min-width: 361px) {
-  #header-text {
-    font-size: 2.25em; }
-  .pre {
-    font-size: .7em; }
-  a {
-    font-size: .75em; } }
+a {
+  text-decoration: none; }
 
-@media (min-width: 501px) {
-  #header-text {
-    font-size: 2.5em; }
-  #center-card {
-    width: 70%; }
-  a {
-    width: 11vw; }
-  .buttons-container {
-    margin: 0 20vw; } }
-
-@media (min-width: 601px) {
-  #header-text {
-    font-size: 3em; }
-  #center-card {
-    width: 60%; }
-  .button {
-    width: 8vw; }
-  .buttons-container {
-    margin: 0 25vw; } }
-
-@media (min-width: 801px) {
-  #center-card {
-    width: 55%; }
-  #header-text {
-    font-size: 3.5em; }
-  a {
-    width: 10vw; }
-  .buttons-container {
-    margin: 0 27.5vw; } }
-
-@media (min-width: 1051px) {
-  #center-card {
-    width: 50%;
-    margin-bottom: 1.25em; }
-  a {
-    width: 9vw;
-    font-size: .9em; }
-  .button {
-    width: 7vw; }
-  .buttons-container {
-    margin: 0 30vw; }
-  .pre {
-    font-size: 1em;
-    line-height: 1.5rem; } }
-
-@media (min-width: 1301px) {
-  #center-card {
-    width: 40%;
-    margin-bottom: 1.5em; }
-  #header-text {
-    font-size: 3.75em; }
-  a {
-    font-size: 1em;
-    width: 8vw; }
-  .button {
-    width: 5vw; }
-  .buttons-container {
-    margin: 0 32.5vw; } }
-
-@media (min-width: 1501px) {
-  br {
-    line-height: 1.75rem; }
-  #header-text {
-    font-size: 4.5em; }
-  .button {
-    width: 4vw; }
-  .buttons-container {
-    margin: 0 33vw; }
-  .pre {
-    font-size: 1.1em; } }
+a:visited {
+  color: grey; }
 

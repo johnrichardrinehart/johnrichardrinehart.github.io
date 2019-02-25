@@ -18,8 +18,6 @@ class ProjectTile extends React.Component {
         const rgb2 = c2.substr(1).match(/.{1,2}/g);
         const result = rgb1.map((c, i) => {
             const res = parseInt(c, 16) + parseInt(rgb2[i], 16)
-            console.log(c)
-            console.log(rgb2[i])
             if (res < 0) {
                 return '00'
             } else if (res > 0xFF) {
@@ -27,7 +25,6 @@ class ProjectTile extends React.Component {
             }
             return res.toString(16)
         })
-        console.log(result.join(''))
         return '#' + result.join('')
     }
 
@@ -35,7 +32,6 @@ class ProjectTile extends React.Component {
         this.addHexColor(this.props.color, this.props.color)
 
         if (this.state.backgroundColor !== this.props.color) {
-            console.log('dif color needed.')
             this.setState({ backgroundColor: this.props.color })
             return
         }
@@ -49,8 +45,8 @@ class ProjectTile extends React.Component {
 
         return (
             <div class="card" style={style} onMouseEnter={this.setButtonHovered} onMouseLeave={this.setButtonHovered} >
-                <a href={this.props.url}>
-                    <span class="title">{this.props.title}</span>
+                <a href={this.props.projectURL} class="title">
+                    {this.props.title}
                 </a>
                 <span class="desc-container">
                     <p class="desc-text">
@@ -69,7 +65,7 @@ class ProjectTile extends React.Component {
                         </p>
                     </p>
                     <p class="desc-link">
-                        <a href={this.props.url}>
+                        <a href={this.props.githubURL}>
                             <img src="assets/GitHub-Mark/PNG/GitHub-Mark-64px.png" alt="GitHub" />
                         </a>
                     </p>

@@ -16,7 +16,8 @@ function recursiveIssuer(m) {
 
 const entryPoints = {
     ProjectTile: './react/ProjectTile.jsx',
-    AboutContainer: './react/AboutContainer.jsx'
+    AboutContainer: './react/AboutContainer.jsx',
+    Resume: './react/Resume.jsx'
 }
 
 config.scss.forEach(entry => {

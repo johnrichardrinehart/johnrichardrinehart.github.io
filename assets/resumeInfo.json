@@ -1,0 +1,87 @@
+{
+    "jobs": [{
+        "title": "Delivery Driver and Developer",
+        "datestring": "May, 2018 - Present",
+        "company": "Industrial Electrical Company",
+        "brief": "Interfaced with customers to meet their motor and welder service needs. Developed a mobile application to streamline operations.",
+        "accomplishments": [
+            "Hand-crafted a ReactNative application respecting good design principles (Material Design/Human Interface Guidelines).",
+            "Used best practices for development including modular development and test-driven development (jest)."
+        ]
+    }, {
+        "title": "Academic Researcher - Quantum Information",
+        "datestring": "May, 2013 - May, 2018",
+        "company": "DQMLab: University of Waterloo",
+        "brief": "My responsibilities to the Digital Quantum Matter Laboratory involved assisting the development of an instrumentation control software, Alfred, and researching improved microwave measurement techniques and innovating new superconducting circuit design and control protocols.",
+        "accomplishments": [
+            "Applied knowledge of microwave engineering to design an infrared filter.",
+            "Assisted with the design of MATLAB object-oriented, websocket-based instrument control system: Alfred. Alfred operates on a client-server model, using JSON objects for the wire protocol."
+        ]
+    }, {
+        "title": "Visiting Researcher",
+        "datestring": "May, 2012 - August, 2012",
+        "company": "U.C. Santa Barbara",
+        "brief": "Developed a novel microwave interface for a superconducting quantum circuit. Worked alongside the world-class researchers of the Martinis Group (now affiliated with Google, Inc.).",
+        "accomplishments": [
+            "Designed an aluminum enclosure providing a 50 &Omega; environment for a custom microstrip printed circuit board I had designed.",
+            "Performed time-domain reflectometry on the manufactured component and verified that the design met the specified spatial and electrical tolerances."
+        ]
+    }, {
+        "title": "Software Engineer",
+        "datestring": "May, 2011 - August, 2011",
+        "company": "LHC2, Inc. - Spokane, Washington",
+        "brief": "Participated in the development of a disruptive wireless radio technology. This technology has been demonstrated to improve the signal-to-noise ratios in receivers by as much as 40 dB.",
+        "accomplishments": [
+            "Designed algorithms to use in conjunction with the Ettus Universal Software Radio Peripheral (USRP) cognitive radio system.",
+            "Wrote software in C++ implementing a real-time fast Fourier transform (FFT) algorithm.",
+            "Conducted field tests and corporate product demonstrations validating the robustness of the LHC2 technology."
+        ]
+    }],
+    "education": [{
+        "degree": "B.S. - Electrical Engineering, Major - Physics",
+        "name": "Gonzaga University (GPA - 3.75)",
+        "datestring": "September, 2009 - May, 2013",
+        "brief": "Completed a 4-year program in Electrical Engineering and a major in Physics.",
+        "accomplishments": [
+            "Mastered advanced signal processing, controls systems, and communications systems courses (FFT, DFT, wavelet transform, root locus method, QPSK and QAM architectures).",
+            "Studied quantum mechanics, statistical physics, and mathematical methods for physics (Runge-Kutta, gradient descent, path integrals, Fermi-Dirac distribution).",
+            "4th-year engineering design project involved assessing spectral characteristics of spontaneous interferers in the context of Middleton noise statistics."
+        ]
+    }],
+    "projects": [{
+        "name": "DMCScheduler.py",
+        "brief": "Wrote a scheduling application to help nurses at Doctor's Medical Center of Modesto.",
+        "datestring": "November 2018 - Present",
+        "accomplishments": [
+            "Single Page Application utilizing a Python backend which runs the custom scheduling algorithm.",
+            "Single-click deployment makes use a breeze for non-technical users."
+        ]
+    }, {
+        "name": "LaTeXCI",
+        "brief": "Wrote a LaTeX continuous integration server using Python (Flask, jinja2, uWSGI), sqlite3, and nginx.",
+        "datestring": "March, 2016 - Present",
+        "accomplishments": [
+            "This application is designed to be easily deployable and allows anyone to host their own LaTeX continuous integration server.",
+            "Features server-side authentication and integrates with Git server webhooks.",
+            "Future version will be shipped in a docker container allowing for application scaling, easy deployment, and isolated development."
+        ]
+    }, {
+        "name": "Go-Chat",
+        "brief": "Wrote a chat server in Go and a chat client in vanilla Javascript and HTML.",
+        "datestring": "January, 2016 - Present",
+        "accomplishments": [
+            "The application is designed to allow Go channels to manage the simultaneous connection of up to 10,000 simultaneous users on standard hardware.",
+            "The design currently features a server-side log; future versions will include chat time-stamps and token-based authentication.",
+            "Easily deployable in a wide variety of operating systems; future versions will be built using industry-standard continuous integration tools (Jenkins) and unit testing."
+        ]
+    }],
+    "additionalExperience": [
+        "Used a variety of Linux-based distributions (primarily Debian-based distributions) for 10 years.",
+        "Configured OpenVPN, FTP, SSH, HTTP (nginx and Apache) servers and CIFS (Samba) shares in a Linux environment.",
+        "Understand advanced networking principles (NAT, DNS, traffic routing, etc.).",
+        "Versed in the following programming languages (in decreasing fluency: Javascript, Python (2.7 and 3.6), Go, MATLAB, LaTeX, Java, C++, C.",
+        "Have taken massive open online courses (MOOCs) in Android development, heterogeneous parallel programming, digital signal processing and machine learning.",
+        "Have contributed to the development of a number of open-source projects (primarily vimtex and Syncthing).",
+        "Fluent in English and Spanish; conversational-level French."
+    ]
+}

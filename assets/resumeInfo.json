@@ -25,7 +25,8 @@
         "accomplishments": [
             "Designed an aluminum enclosure providing a 50 &Omega; environment for a custom microstrip printed circuit board I had designed.",
             "Performed time-domain reflectometry on the manufactured component and verified that the design met the specified spatial and electrical tolerances."
-        ]
+        ],
+        "cssClasses": "print-hide"
     }, {
         "title": "Software Engineer",
         "datestring": "May, 2011 - August, 2011",
@@ -35,10 +36,11 @@
             "Designed algorithms to use in conjunction with the Ettus Universal Software Radio Peripheral (USRP) cognitive radio system.",
             "Wrote software in C++ implementing a real-time fast Fourier transform (FFT) algorithm.",
             "Conducted field tests and corporate product demonstrations validating the robustness of the LHC2 technology."
-        ]
+        ],
+        "cssClasses": "print-hide"
     }],
     "education": [{
-        "degree": "B.S. - Electrical Engineering, Major - Physics",
+        "degree": "B.S.: Electrical Engineering, Major: Physics",
         "name": "Gonzaga University (GPA - 3.75)",
         "datestring": "September, 2009 - May, 2013",
         "brief": "Completed a 4-year program in Electrical Engineering and a major in Physics.",

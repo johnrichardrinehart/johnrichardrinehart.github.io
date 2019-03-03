@@ -46,7 +46,7 @@ function Section(props) {
 
 function Stage(props) {
     return (
-        <div className="job">
+        <div className={props.cssClasses ? "job " + props.cssClasses: "job"}>
             {
                 (props.title || props.datestring) &&
                 <div className="job-where-and-when">
@@ -77,7 +77,7 @@ function Stage(props) {
             }
             {
                 props.accomplishments &&
-                <ul className="job-desc job-list">
+                <ul className="job-desc">
                     {props.accomplishments.map(a => <li>{a}</li>)}
                 </ul>
             }
@@ -130,8 +130,8 @@ function ProjectsSection(props) {
 
 function AdditionalExperience(props) {
     return (
-        <Section ID="additional-experience" sectionName="Additional Experience">
-            <ul>
+        <Section ID="additional-experience" sectionName="Additional Experience and Technologies">
+            <ul className="job-desc">
                 {resumeInfo.additionalExperience.map(p => <li>{p}</li>)}
             </ul>
         </Section>

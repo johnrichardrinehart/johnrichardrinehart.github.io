@@ -86,6 +86,6 @@ export default [
             TechnologiesEnum.CANVAS,
         ],
         githubURL: `https://github.com/johnrichardrinehart/pong.js`,
-        projectURL:`/pong/`,
+        projectURL: `https://github.com/johnrichardrinehart/pong.js`,
         status: `Stable`,
     },]

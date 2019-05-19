@@ -43,5 +43,7 @@
     "webpack-cli": "^3.3.2",
     "webpack-fix-style-only-entries": "^0.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tar": ">=4.4.2"
+  }
 }
